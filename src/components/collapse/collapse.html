@@ -1,0 +1,11 @@
+<div color="danger" class="collapse-base" (click)="toggleDetails()">
+  <div class="collapse-title">
+    <ng-content select=".collapse-head"></ng-content>
+    <div class="title-tag">
+      <div class="title-tag-decor">Company</div>
+    </div>
+  </div>
+  <div class="collapse-item" *ngIf="showDetails">
+    <ng-content select=".collapse-content"></ng-content>
+  </div>
+</div>
